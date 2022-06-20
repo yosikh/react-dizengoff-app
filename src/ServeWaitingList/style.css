@@ -1,0 +1,10 @@
+.text {
+    height: 2em;
+    color: gray;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+    font-size: 18px;
+    text-align: left;
+    text-indent: 5px;
+}

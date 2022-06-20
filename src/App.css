@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Load {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  background-image: url("./assets/load.jpg");
+  height: 46em;
+  width: 90em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.upload {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
   color: white;
+  background-color: transparent;
+  border: 0.5em solid rgb(197, 190, 190);
+  border-radius: 50%;
+  height: 20%;
+  width: 20%;
+  margin-left: 1em;
+  margin-top: 25em;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./assets/bg.jpg");
+  height: 46em;
+  width: 90em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.container {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 25em;
+  width: 100%;
+  margin-top: 6em;
+}
+
+.wrap-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12em;
+  height: 23em;
+  width: 46em;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6em;
+  width: 10em;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 16px 22px;
+  transition: all 0.2s ease;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgba(58, 31, 27, 0.5);
+  width: 56px;
+  height: 56px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-size: 16px;
+  line-height: 8px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #7c7674;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.96);
 }
